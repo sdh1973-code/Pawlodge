@@ -1,27 +1,170 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PawLodge - Boek dierenhotels eenvoudig online</title>
-<style>
-body{font-family:Arial,sans-serif;max-width:1000px;margin:0 auto;padding:20px;line-height:1.6;color:#333}header{text-align:center;padding:40px 0}section{margin-bottom:40px}h1,h2{color:#2c6e49}.box{background:#f5f5f5;padding:20px;border-radius:8px}footer{margin-top:50px;border-top:1px solid #ddd;padding-top:20px;color:#666;font-size:.9em}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PawLodge</title>
+  <style>
+    :root {
+      --green: #2c6e49;
+      --text: #1f2933;
+      --muted: #4b5563;
+      --bg: #f5f7f5;
+      --card: #ffffff;
+      --border: #dfe7e2;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+    }
+
+    header {
+      text-align: center;
+      padding: 32px 0 12px;
+    }
+
+    h1, h2, h3 {
+      color: var(--green);
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+    }
+
+    .intro {
+      font-size: 1.1rem;
+      margin: 0;
+      color: var(--muted);
+    }
+
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 24px 24px 18px;
+      margin-top: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    strong {
+      color: var(--text);
+    }
+
+    ul {
+      margin: 0 0 12px 20px;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+  </style>
 </head>
 <body>
-<header>
-<h1>PawLodge</h1>
-<p>Vind en boek betrouwbare dierenhotels voor je huisdier.</p>
-</header>
-<section><h2>Over PawLodge</h2><p>PawLodge komt binnenkort online! PawLodge is een online platform waarmee eigenaars van huisdieren eenvoudig dierenhotels kunnen zoeken, vergelijken en boeken. Via ons platform kunnen klanten beschikbare verblijven bekijken, prijzen vergelijken en reserveringen maken voor hun huisdieren.</p></section>
-<section><h2>Contactgegevens</h2><div class="box"><p><strong>E-mail:</strong>liesbeth_ollieuz@hotmail.com</p><p><strong>Website:</strong> pawlodge.be</p><p><strong>Klantenservice:</strong> bereikbaar via e-mail voor vragen, annuleringen en terugbetalingen.</p></div></section>
-<section><h2>Terugbetalingsbeleid (Refund Policy)</h2><p>Klanten kunnen een terugbetaling aanvragen binnen 14 dagen na betaling, tenzij de geboekte dienst reeds volledig werd uitgevoerd.</p><p>Na goedkeuring wordt een terugbetaling verwerkt binnen 10 werkdagen via dezelfde betaalmethode waarmee de oorspronkelijke betaling werd uitgevoerd.</p></section>
-<section><h2>Geschillenbeleid (Dispute Policy)</h2><p>Indien een klant niet tevreden is over een boeking of betaling, verzoeken wij eerst contact op te nemen via liesbeth_ollieuz@hotmail.com.</p><p>PawLodge zal elke klacht onderzoeken en streven naar een minnelijke oplossing binnen 14 werkdagen.</p></section>
-<section><h2>Annuleringsbeleid</h2><p>Boekingen kunnen kosteloos geannuleerd worden tot 48 uur vóór de geplande aanvang van het verblijf.</p><p>Bij annulering binnen 48 uur voor aanvang kan een administratieve kost worden aangerekend.</p></section>
-<section><h2>Retourbeleid</h2><p>Aangezien PawLodge een digitaal boekingsplatform voor diensten is, zijn fysieke retourzendingen niet van toepassing.</p><p>Eventuele terugbetalingen verlopen volgens het terugbetalingsbeleid.</p></section>
-<section><h2>Levering van de dienst</h2><p>Na een succesvolle betaling ontvangt de klant een bevestiging van de boeking per e-mail.</p><p>De geboekte dienst wordt geleverd door het gekozen dierenhotel op de afgesproken data.</p></section>
-<section><h2>Algemene voorwaarden</h2><p>Door gebruik te maken van PawLodge verklaart de gebruiker akkoord te gaan met deze voorwaarden.</p><p>PawLodge treedt op als boekingsplatform tussen klanten en aangesloten dierenhotels. De uitvoering van het verblijf blijft de verantwoordelijkheid van het gekozen dierenhotel.</p></section>
-<section><h2>Privacybeleid</h2><p>PawLodge respecteert de privacy van haar gebruikers en verwerkt persoonsgegevens uitsluitend voor het beheren van boekingen, betalingen en klantenondersteuning.</p><p>Persoonsgegevens worden niet verkocht aan derden en worden verwerkt conform de geldende GDPR-wetgeving.</p></section>
-<footer><p>© 2026 PawLodge. Alle rechten voorbehouden.</p><p>Contact: liesbeth_ollieuz@hotmail.com</p></footer>
+  <div class="container">
+    <header>
+      <h1>PawLodge</h1>
+      <p class="intro">Vind en boek betrouwbare dierenhotels voor je huisdier</p>
+    </header>
+
+    <section>
+      <h2>Over PawLodge</h2>
+      <p>PawLodge is een online boekingsplatform dat huisdiereigenaars in contact brengt met onafhankelijke dierenhotels. Via het platform kunnen gebruikers dierenhotels zoeken, vergelijken en een reserveringsaanvraag indienen of een boeking maken.</p>
+      <p>PawLodge biedt zelf geen dierenopvang, pensiondiensten of andere verblijfsdiensten voor huisdieren aan. PawLodge treedt uitsluitend op als onafhankelijk bemiddelings- en boekingsplatform tussen gebruikers en aangesloten dierenhotels.</p>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <p><strong>E-mail:</strong> info@pawlodge.be</p>
+      <p><strong>Website:</strong> pawlodge.be</p>
+      <p>Vragen, klachten en verzoeken met betrekking tot boekingen, betalingen of het gebruik van het platform kunnen worden gericht aan bovenstaand e-mailadres.</p>
+    </section>
+
+    <section>
+      <h2>Boekingen en betalingen</h2>
+      <p>Betalingen voor boekingen worden verwerkt via door PawLodge geselecteerde betalingsdienstverleners.</p>
+      <p>PawLodge faciliteert de betaling tussen de gebruiker en het betrokken dierenhotel, maar is geen aanbieder van de geboekte opvangdienst.</p>
+      <p>Een boeking komt tot stand tussen de gebruiker en het geselecteerde dierenhotel. Het dierenhotel blijft uitsluitend verantwoordelijk voor de uitvoering van de opvangdienst.</p>
+    </section>
+
+    <section>
+      <h2>Annuleringen en terugbetalingen</h2>
+      <p>Annulerings- en terugbetalingsvoorwaarden kunnen verschillen per dierenhotel. De toepasselijke voorwaarden worden vóór het afronden van de boeking aan de gebruiker meegedeeld.</p>
+      <p>Indien een gebruiker aanspraak maakt op een terugbetaling overeenkomstig de voorwaarden van het betrokken dierenhotel, zal PawLodge de verwerking van deze terugbetaling faciliteren via de gebruikte betalingsmethode.</p>
+      <p>PawLodge kan een terugbetalingsverzoek weigeren indien dit niet in overeenstemming is met de toepasselijke annulerings- of terugbetalingsvoorwaarden.</p>
+    </section>
+
+    <section>
+      <h2>Geschillenregeling</h2>
+      <p>Klachten met betrekking tot de uitvoering van de opvangdienst dienen in eerste instantie rechtstreeks met het betrokken dierenhotel te worden opgenomen.</p>
+      <p>Indien geen oplossing wordt bereikt, kan de gebruiker PawLodge verzoeken te bemiddelen. PawLodge zal redelijke inspanningen leveren om een minnelijke oplossing te bevorderen, zonder enige garantie op een bepaald resultaat.</p>
+      <p>PawLodge is niet aansprakelijk voor handelingen, nalatigheden, tekortkomingen of contractuele wanprestaties van dierenhotels.</p>
+    </section>
+
+    <section>
+      <h2>Beperking van aansprakelijkheid</h2>
+      <p>PawLodge fungeert uitsluitend als technologisch platform en tussenpersoon.</p>
+      <p>Voor zover wettelijk toegestaan, is PawLodge niet aansprakelijk voor:</p>
+      <ul>
+        <li>de kwaliteit, veiligheid of geschiktheid van de aangeboden opvangdiensten;</li>
+        <li>schade, verlies, ziekte, verwonding of overlijden van een huisdier;</li>
+        <li>onjuiste of onvolledige informatie verstrekt door gebruikers of dierenhotels;</li>
+        <li>annuleringen, overboekingen of niet-beschikbaarheid van een dierenhotel;</li>
+        <li>indirecte of gevolgschade voortvloeiend uit het gebruik van het platform.</li>
+      </ul>
+      <p>De aansprakelijkheid van PawLodge is in ieder geval beperkt tot de door de gebruiker betaalde platformkosten met betrekking tot de betreffende boeking.</p>
+    </section>
+
+    <section>
+      <h2>Verantwoordelijkheden van dierenhotels</h2>
+      <p>Elk dierenhotel verklaart en garandeert dat het beschikt over alle vereiste vergunningen, registraties, verzekeringen en wettelijke toelatingen die nodig zijn voor de uitoefening van zijn activiteiten.</p>
+      <p>Het dierenhotel blijft verantwoordelijk voor de naleving van alle toepasselijke wet- en regelgeving inzake dierenwelzijn, consumentenbescherming, fiscaliteit en bedrijfsvoering.</p>
+    </section>
+
+    <section>
+      <h2>Privacybeleid</h2>
+      <p>PawLodge verwerkt persoonsgegevens uitsluitend voor het uitvoeren van boekingen, het verwerken van betalingen, klantenondersteuning, fraudepreventie en de werking van het platform.</p>
+      <p>Persoonsgegevens worden verwerkt overeenkomstig de toepasselijke gegevensbeschermingswetgeving, waaronder de Algemene Verordening Gegevensbescherming (GDPR).</p>
+      <p>Persoonsgegevens worden niet verkocht aan derden.</p>
+    </section>
+
+    <section>
+      <h2>Toepasselijk recht</h2>
+      <p>Op het gebruik van PawLodge en alle geschillen met betrekking tot het platform is uitsluitend Belgisch recht van toepassing.</p>
+      <p>Geschillen behoren tot de exclusieve bevoegdheid van de rechtbanken van het gerechtelijk arrondissement Antwerpen.</p>
+    </section>
+
+    <section>
+      <h2>Bedrijfsinformatie</h2>
+      <p><strong>Ondernemingsnaam:</strong> PawLodge</p>
+      <p><strong>Rechtsvorm:</strong> eenmanszaak</p>
+      <p><strong>Ondernemingsnummer:</strong> TBD</p>
+      <p><strong>Vestigingsadres:</strong> Eikenstraat 7/101, 2000 Antwerpen, België</p>
+      <p><strong>E-mailadres:</strong> info@pawlodge.be</p>
+    </section>
+  </div>
 </body>
 </html>
