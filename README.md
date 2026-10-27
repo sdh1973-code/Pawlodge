@@ -1,2 +1,2 @@
 # Pawlodge
-Pawlodge website
+Pawlodge website: temporary website until Bubble website is ready
